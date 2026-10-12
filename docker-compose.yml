@@ -1,0 +1,8 @@
+#starts Kafka in a container and hooks it up to a local host.
+# run:  sudo docker compose up -d      Stop:  sudo docker compose down
+services:
+  kafka:
+    image: apache/kafka:3.8.0
+    container_name: login
+    ports:
+      - "9092:9092"
