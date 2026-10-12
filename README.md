@@ -39,7 +39,7 @@ to simulate this detector without setting up Java and Kafka on their local devic
 1. Start Kafka (from the project folder):
 
 
-sudo docker compose up -d
+`sudo docker compose up -d`
 
 
 2. Set up Python (a virtual environment is needed):
@@ -58,8 +58,6 @@ Run `source venv/bin/activate` in every new terminal before the steps below. Als
 `python detector.py --name det3`
 `python detector.py --name det4`
 `python detector.py --name det5`
-
-Each prints `>>> assigned partitions: [...]`, showing how Kafka split the work.
 
 4. Start three sensors, each in its own terminal:
 
